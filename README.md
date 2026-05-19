@@ -19,4 +19,4 @@ NovaForge Digital is a frontend project crafted to look and feel like a real-wor
 
 ---
 
-## 📁 Project Structure
+
