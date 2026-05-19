@@ -1,0 +1,35 @@
+.newsletter_container {
+  // Content
+  .newsletter_content {
+    background-color: $secondary-color;
+    padding: 5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    // Header
+    .section_header {
+      color: $white;
+      margin-bottom: 2rem;
+      max-width: 750px;
+      margin-inline: auto;
+    }
+
+    // Form
+    form {
+      width: 100%;
+      max-width: 600px;
+      margin-inline: auto;
+      padding: 0.25rem;
+      background-color: $white;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+
+      input {
+        flex: 1; // Form içerisinde yer alan alanda button haricindeki tüm alanı input'a verdik
+        padding-inline: 1rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  // Header
+  &_header {
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-color;
+    max-width: $max-width;
+    margin: 0 auto !important;
+  }
+
+  // Logo
+  &_logo a {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: $white;
+    white-space: nowrap;
+  }
+  .logo_span {
+    display: none;
+  }
+  // Menu Btn
+
+  &_menu_btn {
+    font-size: 1.5rem;
+    color: $white;
+    cursor: pointer;
+  }
+
+  // Links
+
+  &_links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: $primary-color;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: all 0.5s ease;
+
+    &.open {
+      transform: translateY(100%);
+    }
+
+    a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+
+  &_btns {
+    display: none;
+    white-space: nowrap;
+  }
+
+  // Responsive Design
+  @include respond(md) {
+    position: static; // position: static elemanların default konumlamasıdır.Bu projede büyük ekranlarda header kısmının default durumunda küçük ekranlarda ise ekranın en yukarısıdan konumlanmasını istiyoruz.Bu sebeple md ekranlardan itibaren default duruma döndük.;
+    margin-inline: auto;
+
+    &_header {
+      padding: 1rem;
+      background-color: transparent;
+    }
+
+    &_logo a {
+      display: none;
+    }
+
+    &_links {
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+      padding: 0;
+      transform: none !important;
+
+      a {
+        color: $text-light;
+      }
+    }
+
+    &_btns {
+      display: block;
+    }
+
+    .logo_span {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: $white;
+      color: $secondary-color;
+      display: block;
+    }
+  }
+}

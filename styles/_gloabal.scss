@@ -1,0 +1,27 @@
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: $primary-color;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.section_container {
+  max-width: $max-width;
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section_header {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: $text-dark;
+  text-align: center;
+}

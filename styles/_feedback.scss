@@ -1,0 +1,69 @@
+.feedback_container {
+  padding-bottom: 3rem;
+
+  // Swipper
+  .swiper {
+    padding-block: 4rem 2rem;
+    width: 100%;
+
+    &_slide {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+      gap: 1rem;
+
+      // Feedback Card
+      .feedback_card {
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+          color: $text-light;
+          line-height: 1.5rem;
+          margin-bottom: 0.5rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding-bottom: 1rem;
+        }
+        .user-detail {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .feedback-detail {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          img {
+            width: 50px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+          }
+
+          h4 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: $text-dark;
+            margin: 0.5rem 0;
+          }
+
+          h5 {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: $text-light;
+          }
+        }
+        // Raiting
+        .rating {
+          i {
+            color: goldenrod;
+          }
+        }
+      }
+    }
+  }
+}

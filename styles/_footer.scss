@@ -1,0 +1,98 @@
+footer {
+  background-color: $extra-light;
+
+  // Footer Container
+  .footer_container {
+    display: grid;
+    gap: 4rem 2rem;
+
+    @include respond(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(md) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    // Col
+    &_col {
+      // Logo
+      .footer_logo {
+        display: block;
+        margin-bottom: 2rem !important;
+        font-size: 1.25rem;
+        color: $text-dark;
+        font-weight: 800;
+        span {
+          color: $secondary-color;
+        }
+      }
+
+      // Description
+      .footer_description {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $text-light;
+        line-height: 1.5rem;
+      }
+
+      // Titles
+      h3,
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $text-dark;
+        margin-bottom: 1rem;
+      }
+
+      // Socials
+      .footer_socials {
+        display: flex;
+        gap: 0.5rem;
+
+        a {
+          padding: 4px 6px;
+          font-size: 1.125rem;
+          color: $secondary-color;
+          border: 1px solid $secondary-color;
+          border-radius: 50%;
+
+          &:hover {
+            background-color: $secondary-color;
+            color: $white;
+          }
+        }
+      }
+
+      // Footer Links
+      .footer_links {
+        display: grid;
+        gap: 1rem;
+
+        a {
+          font-size: 1rem;
+          font-weight: 500;
+          color: $text-light;
+          display: flex;
+          gap: 0.5rem;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+
+        i {
+          color: $secondary-color;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // Copyright
+  .copyright {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-light;
+  }
+}

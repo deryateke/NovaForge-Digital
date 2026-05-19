@@ -1,0 +1,121 @@
+.portfolio {
+  background-color: $extra-light;
+  overflow: hidden;
+
+  // Header
+  &_header {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    @include respond(md) {
+      grid-template-columns: repeat(2, 1fr);
+      h2 {
+        text-align: left;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $text-light;
+      line-height: 1.5rem;
+    }
+  }
+
+  // Content
+  &_content {
+    display: grid;
+    gap: 2rem;
+
+    @include respond(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  // Image
+  &_image {
+    position: relative;
+    @include respond(md) {
+      grid-area: 1/2/2/3;
+    }
+    // Content Image
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+    // Content
+    &_content {
+      position: absolute;
+      top: 0;
+      right: 2rem;
+      transform: translateY(-50%);
+      display: flex;
+      background-color: $secondary-color;
+      border-radius: 0.25rem;
+      padding-block: 1.5rem;
+      color: $white;
+
+      div {
+        padding-inline: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &:first-child {
+          border-right: 1px solid $extra-light;
+        }
+
+        h4 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: $extra-light;
+        }
+      }
+    }
+  }
+
+  // List
+  &_list {
+    display: grid;
+    gap: 2rem;
+
+    // List Item
+    li {
+      display: flex;
+      align-items: start;
+      gap: 1rem;
+
+      span {
+        background-color: $secondary-color;
+        width: 5rem;
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        color: $white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        border-radius: 0.25rem;
+      }
+
+      div {
+        h4 {
+          margin-bottom: 0.5rem;
+          font-size: 1.125rem;
+          font-weight: 700;
+          color: $text-dark;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 500;
+          color: $text-light;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}
