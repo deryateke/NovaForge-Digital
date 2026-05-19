@@ -22,7 +22,7 @@ NovaForge Digital is a frontend project crafted to look and feel like a real-wor
 - **HTML5** — Semantic markup
 - **SCSS** — Modular partials, variables, mixins
 - **JavaScript** — Hamburger menu toggle
-
+## Preview 
 - ![NovaForge Digital](./NovaForge-.gif)
 
 
