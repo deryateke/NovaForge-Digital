@@ -17,6 +17,11 @@ NovaForge Digital is a frontend project crafted to look and feel like a real-wor
 | 7 | **Newsletter** | Email input + subscribe button |
 | 8 | **Footer** | Resources, Help, Contact info, Social media links |
 
----
+##  Built With
+
+- **HTML5** — Semantic markup
+- **SCSS** — Modular partials, variables, mixins
+- **JavaScript** — Hamburger menu toggle
+
 
 
